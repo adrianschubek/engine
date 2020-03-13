@@ -14,7 +14,6 @@ class PhpBasicPageTemplate extends BasicPageTemplate
     public function getTemplateString(): string
     {
         $renderedTitle = $this->titleTemplate->getTemplateString();
-
         return <<<HTML
         <div class="page">
             $renderedTitle
